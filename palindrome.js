@@ -1,14 +1,15 @@
-function reverse(string){
-let bag=""
-for(let i=0;i<string.length;i++){
-bag=bag+string[i];
+let str = "naman"
+let checkPalindrome="";
+
+for(let i=str.length-1;i>=0;i++)
+{
+checkPalindrome=checkPalindrome+str[i]
 }
-return bag
+if(checkPalindrome==str)
+{
+console.log("Yes");
 }
-let reversed=reverse("madam")
-if(string==reversed){
-console.log("palindrome")
-}
-else{
-console.log("not a palindrome)
+else
+{
+console.log("No");
 }
